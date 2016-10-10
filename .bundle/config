@@ -1,0 +1,3 @@
+---
+BUNDLE_WITHOUT: "staging:production"
+BUNDLE_DISABLE_SHARED_GEMS: "true"
