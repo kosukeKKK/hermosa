@@ -1,0 +1,94 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#app_title{
+}
+// トップ写真のデザイン
+#image:hover{
+  opacity: 0.8;
+}
+
+// ここまで
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.center{
+  margin: 0 auto;
+   display: table;
+   table-layout: fixed;
+   float:none;
+}
+
+
+
+
+// カテゴリーリストのデザイン
+
+#CategoryList{
+  border-left: 8px solid rgb(9,196,222);
+  color: rgb(11,9,9);
+  margin: 2em 0;
+  padding: 2em;
+  float : left ;
+  width: 200px;
+  height: 250px;
+  margin: 0px;
+  padding: 0px;
+}
+.defaultlist{
+  margin:0px
+}
+.defaultlist
+,.defaultlist li{
+	padding:0px;
+	margin:0px;
+}
+
+.defaultlist li{
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
+}
+
+.list5 li{
+	position:relative;
+	padding-left:20px;
+}
+.list5 li:before{
+	content:'';
+	height:0px;
+	width: 90%;
+	display:block;
+	position:absolute;
+	top:18px;
+	left:0px;
+	border-bottom: 1px dashed #aaa;
+}
+.list5 li:after{
+	content:'';
+	display:block;
+	position:absolute;
+	background:#aaa;
+	width:5px;
+	height:5px;
+	top:7px;
+	left:5px;
+	border-radius: 5px;
+}
+// ここまで

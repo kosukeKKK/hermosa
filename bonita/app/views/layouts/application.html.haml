@@ -1,0 +1,28 @@
+!!! 5
+%html
+  %head
+    %title= full_title(yield(:title))
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+
+  %body
+    = render 'layouts/header'
+    %div{id:"CategoryList"}
+      %p カテゴリー
+      %ul{class:"defaultlist list5"}
+        %li= link_to "ファッション", fashion_path
+        %br
+        %li= link_to "メイク", make_up_path
+        %br
+        %li= link_to "ビューティ", beauty_path
+        %br
+        %li= link_to "グルメ", gourmet_path
+        %br
+        %li= link_to "旅行", travel_path
+
+    %div{class:"container"}
+      = yield
+    = render 'layouts/fotter'
